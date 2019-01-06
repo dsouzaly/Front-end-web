@@ -1,0 +1,77 @@
+
+h1 {
+	color: yellow;
+	font-size: 30px;
+	font-family: Arial;
+	text-align: center;
+}
+
+.background {
+	color: pink;
+	background-color: red;
+}
+
+body{
+	float: center;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  border-color: red;
+  border-width: 0px 10px 10px 0px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  min-height: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: pink;
+}
+
+.left {
+  float: left;
+  width: 20%;
+  border-color: red;
+  border-width: 0px 0px 10px 0px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  min-height: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: pink;
+}
+
+.bottom {
+  float: left;
+  width: 20%;
+  border-color: red;
+  border-width: 0px 10px 0px 0px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  min-height: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: pink;
+}
+
+.bottom-left {
+  float: left;
+  width: 20%;
+  border-color: red;
+  border-width: 0px 0px 0px 0px; /* this allows you to adjust the thickness */
+  border-style: solid;
+  min-height: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: pink;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 50px) {
+  .column {
+    width: 33.33%;
+  }
+}
+
+
